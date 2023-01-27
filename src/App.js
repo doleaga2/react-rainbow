@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, { useState } from 'react'
-import ColorBlock from './ColorBlock'
+import ColorBlock from './Components/ColorBlock';
+import ColorForm from  './Components/ColorForm';
 
 function App(){
     let [colors, setColors] = useState([
@@ -10,6 +11,7 @@ function App(){
         'greenyellow', 'yellow',
         'orange', 'red'
     ])
+
     let colorMap = colors.map((color, i) => {
       return (
           <ColorBlock color={color} />
@@ -30,9 +32,6 @@ function App(){
 
     
 }
-    
-
-
 
 export default App;
 
